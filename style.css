@@ -1,0 +1,110 @@
+:root {
+    --main-bg-color: blue;
+}
+.header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.userInformation {
+    display: flex;
+} 
+
+.userInformationSection{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tarjeta{
+    background-color: var(--main-bg-color);
+    min-height: 90px;
+    min-width: 90px;
+}
+
+@media only screen and (min-width: 601px) {
+    .header {
+        display: flex;
+        height: 20px;
+        width: 100%;
+        margin-bottom: 2em;
+        background-color: var(--main-bg-color);
+    }
+
+    .navegator {
+        margin-right: 1em;
+    }
+    .navegator a {
+        margin-left: 3em;
+    }
+    .tarjetas{
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        column-gap: 10%;
+        row-gap: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 4em;     
+    }
+    .header form{
+        display: none;
+    }
+    .navegator {
+        margin-right: 1em;
+    }
+    .navegator a {
+        margin-left: 0.5em;
+        
+    }
+    .tarjetas{
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        column-gap: 10%;
+        row-gap: 10%;
+    }
+
+
+}
+.contenedor-imagen {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* establece el ancho máximo de la imagen para evitar que se extienda demasiado en pantallas grandes */
+    margin: 0 auto; /* centra el contenedor en la página */
+  }
+  
+  .contenedor-imagen img {
+    width: 100%;
+    height: auto; /* mantiene la proporción de aspecto original de la imagen */
+    display: block; /* elimina cualquier espacio adicional debajo de la imagen */
+    margin: 0; /* elimina cualquier margen adicional */
+    padding: 0; /* elimina cualquier relleno adicional */
+  }
+  
+  .contenido-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--main-bg-color);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+#username:focus{
+    background-color: lightgray;
+}
+
+#enviarButton:hover {
+    background-color: green;
+}
