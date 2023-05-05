@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: blue;
+    --main-bg-color: ;
 }
 .header {
     display: flex;
@@ -33,17 +33,12 @@
     }
 
     .navegator {
-        margin-right: 1em;
+        margin-right 1em;
     }
     .navegator a {
-        margin-left: 3em;
+        margin-left: 3;
     }
     .tarjetas{
-        margin-top: 2em;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4,1fr);
-        column-gap: 10%;
         row-gap: 10%;
     }
 }
